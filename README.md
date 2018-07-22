@@ -1,0 +1,1 @@
+# Apunte para programación competitiva
