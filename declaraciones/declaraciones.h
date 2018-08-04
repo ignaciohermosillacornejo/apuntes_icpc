@@ -22,7 +22,7 @@ typedef vector<vii> wgraph;
 #define eb emplace_back
 #define ppb pop_back
 
-#define lg(x) (31 - __buitlin_clz(x))
+#define lg(x) (31 - __builtin_clz(x))
 #define lgg(x) (63 - __buitlin_clzll(x))
 #define gcd __gcd
 
