@@ -1,5 +1,4 @@
-#include "../../declaraciones/declaraciones.h"
-
+#include "../../headers/headers/headers.h"
 bool bellman_ford(wgraph &g, int start)
 {
     int n = g.size();

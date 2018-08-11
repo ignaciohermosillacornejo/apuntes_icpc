@@ -14,8 +14,8 @@ typedef vector<vii> wgraph;
 #ifndef declaraciones_h
 #define declaraciones_h
 
-#define rep(i,n) for(size_t i = 0; i < (size_t)n; i++)
-#define repx(i,a,b) for(size_t i = a; i < (size_t)b; i++)
+#define rep(i,n) for(int i = 0; i < n; i++)
+#define repx(i,a,b) for(int i = a; i < b; i++)
 #define invrep(i,a,b) for(int i = b; i-- > (int)a)
 
 #define pb push_back
@@ -26,7 +26,7 @@ typedef vector<vii> wgraph;
 #define lgg(x) (63 - __buitlin_clzll(x))
 #define gcd __gcd
 
-//ios::sync_with_stdio(0); cin.tie(0);
+ios::sync_with_stdio(0); cin.tie(0);
 //cout.setf(ios::fixed); cout.precision(4);
 
 #define debugx(x) //cerr<<#x<<": "<<x<<endl

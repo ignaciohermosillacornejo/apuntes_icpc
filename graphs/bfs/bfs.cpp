@@ -1,4 +1,4 @@
-#include "../../declaraciones/declaraciones.h"
+#include "../../headers/headers/headers.h"
 
 void bfs(graph &g, int start)
 {

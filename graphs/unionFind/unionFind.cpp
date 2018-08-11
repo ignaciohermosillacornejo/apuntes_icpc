@@ -1,5 +1,4 @@
-#include "../../declaraciones/declaraciones.h"
-
+#include "../../headers/headers/headers.h"
 class UnionFind
 {
   private:

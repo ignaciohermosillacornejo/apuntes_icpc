@@ -56,6 +56,14 @@
 # *.ps
 # *.eps
 # *.pdf
+*.py
+*.py.err
+*.py.out
+dir.tex
+latex.py
+ListOfFiles.tex
+__latexindent_temp.tex
+
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf

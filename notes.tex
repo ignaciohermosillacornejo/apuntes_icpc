@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{pgffor}
+\usepackage{listings}
+\usepackage[section]{minted}
+\usepackage{python}
+
+\newmintedfile[phpcode]{php}{
+bgcolor=mintedbackground,
+fontfamily=tt,
+linenos=true,
+numberblanklines=true,
+numbersep=5pt,
+gobble=0,
+frame=leftline,
+framerule=0.4pt,
+framesep=2mm,
+funcnamehighlighting=true,
+tabsize=4,
+obeytabs=false,
+mathescape=false
+samepage=false, %with this setting you can force the list to appear on the same page
+showspaces=false,
+showtabs =false,
+texcl=false,
+}
+
+
+
+
+\begin{document}
+
+\begin{python}
+import glob
+raw_files =  ["." + x.lstrip('.') for x in glob.glob("./*/*/*.cpp")]
+files = [x + "," for x in raw_files[:-1]] + raw_files[-1:]
+f  = open("ListOfFiles.tex", "w")
+f.write("\\def\ListOfFiles{")
+for x in files: f.write(x)
+f.write("}")
+\end{python}
+
+\input{ListOfFiles}
+
+%\setcounter{tocdepth}{1}
+\listoffigures
+
+
+\foreach \file in \ListOfFiles
+{
+\begin{figure}[t!]
+	   \caption{\file}
+	   \inputminted[autogobble]{C++}{\file}
+\end{figure}
+}
+
+
+\end{document}
