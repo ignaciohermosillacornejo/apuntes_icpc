@@ -26,7 +26,7 @@ typedef vector<vii> wgraph;
 #define lgg(x) (63 - __buitlin_clzll(x))
 #define gcd __gcd
 
-ios::sync_with_stdio(0); cin.tie(0);
+//ios::sync_with_stdio(0); cin.tie(0);
 //cout.setf(ios::fixed); cout.precision(4);
 
 #define debugx(x) //cerr<<#x<<": "<<x<<endl
