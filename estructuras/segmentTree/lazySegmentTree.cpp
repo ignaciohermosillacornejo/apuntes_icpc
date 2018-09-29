@@ -2,13 +2,13 @@
 
 struct RSQ // Range sum query
 {
-    static intt const neutro = 0;
-    static intt op(intt x, intt y)
+    static ll const neutro = 0;
+    static ll op(ll x, ll y)
     {
         return x + y;
     }
-    static intt
-    lazy_op(int i, int j, intt x)
+    static ll
+    lazy_op(int i, int j, ll x)
     {
         return (j - i + 1) * x;
     }
@@ -16,13 +16,13 @@ struct RSQ // Range sum query
 
 struct RMinQ // Range minimun query
 {
-    static intt const neutro = 1e18;
-    static intt op(intt x, intt y)
+    static ll const neutro = 1e18;
+    static ll op(ll x, ll y)
     {
         return min(x, y);
     }
-    static intt
-    lazy_op(int i, int j, intt x)
+    static ll
+    lazy_op(int i, int j, ll x)
     {
         return x;
     }
@@ -31,7 +31,7 @@ struct RMinQ // Range minimun query
 template <class t>
 class SegTreeLazy
 {
-    vector<intt> arr, st, lazy;
+    vector<ll> arr, st, lazy;
     int n;
 
     void build(int u, int i, int j)
@@ -47,7 +47,7 @@ class SegTreeLazy
         st[u] = t::op(st[l], st[r]);
     }
 
-    void propagate(int u, int i, int j, intt x)
+    void propagate(int u, int i, int j, ll x)
     {
         // nota, las operaciones pueden ser un and, or, ..., etc.
         st[u] += t::lazy_op(i, j, x); // incrementar el valor (+)
@@ -64,7 +64,7 @@ class SegTreeLazy
         lazy[u] = 0;
     }
 
-    intt query(int a, int b, int u, int i, int j)
+    ll query(int a, int b, int u, int i, int j)
     {
         if (j < a or b < i)
             return t::neutro;
@@ -73,12 +73,12 @@ class SegTreeLazy
             propagate(u, i, j, lazy[u]);
         if (a <= i and j <= b)
             return st[u];
-        intt x = query(a, b, l, i, m);
-        intt y = query(a, b, r, m + 1, j);
+        ll x = query(a, b, l, i, m);
+        ll y = query(a, b, r, m + 1, j);
         return t::op(x, y);
     }
 
-    void update(int a, int b, intt value,
+    void update(int a, int b, ll value,
                 int u, int i, int j)
     {
         int m = (i + j) / 2, l = u * 2 + 1, r = u * 2 + 2;
@@ -97,7 +97,7 @@ class SegTreeLazy
     }
 
   public:
-    SegTreeLazy(vector<intt> &v)
+    SegTreeLazy(vector<ll> &v)
     {
         arr = v;
         n = v.size();
@@ -106,12 +106,12 @@ class SegTreeLazy
         build(0, 0, n - 1);
     }
 
-    intt query(int a, int b)
+    ll query(int a, int b)
     {
         return query(a, b, 0, 0, n - 1);
     }
 
-    void update(int a, int b, intt value)
+    void update(int a, int b, ll value)
     {
         update(a, b, value, 0, 0, n - 1);
     }
