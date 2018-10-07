@@ -1,5 +1,5 @@
 #include "../../headers/headers/headers.h"
-////numeración desde 0 hasta n-1 (m-1 resp), rangos inclusivo inclusivo
+//Numeración en [0,n-1] y [0,m-1]
 template <class T>
 class FenwickTree2D
 {

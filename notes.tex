@@ -3,6 +3,7 @@
 \usepackage{listings}
 \usepackage[section]{minted}
 \usepackage{python}
+\usepackage{hyperref}
 
 \newmintedfile[phpcode]{php}{
 bgcolor=mintedbackground,
@@ -29,7 +30,7 @@ texcl=false,
 \begin{python}
 	import glob
 	raw_files = ["." + x.lstrip('.') for x in glob.glob("./*/*/*.h")]
-	raw_files += ["." + x.lstrip('.') for x in glob.glob("./*/*/*.cpp")]
+	raw_files += ["." + x.lstrip('.') for x in glob.glob("./*/*/*.cpp")].sorted()
 	files = [x + "," for x in raw_files[:-1]] + raw_files[-1:]
 	f = open("ListOfFiles.tex", "w")
 	f.write("\\def\ListOfFiles{")

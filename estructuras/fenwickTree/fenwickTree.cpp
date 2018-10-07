@@ -24,7 +24,6 @@ struct FenwickTree
     void update(int i, int v)
     {
         int s = query(i, i);
-        //cout << FT[i] << "\n";
         for (; i < FT.size(); i += i & (-i))
             FT[i] += v - s;
     }
