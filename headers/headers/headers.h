@@ -3,6 +3,7 @@
 using namespace std;
 
 typedef long long ll;
+typedef unsigned long long ull;
 typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
@@ -35,7 +36,9 @@ typedef vector<vii> wgraph;
 #define debugv(v)         \
     cerr << #v << ":";    \
     for (auto e : v)      \
+    {                     \
         cerr << " " << e; \
+    }                     \
     cerr << endl
 #define debugm(m)                                        \
     cerr << #m << endl;                                  \
