@@ -53,23 +53,23 @@ texcl=false,
 \begin{multicols}{2}
 	\begin{tabular}{| l | c |}
 		\hline
-		$O(f(n))$       & Limite                                                                                                              \\
+		$O(f(n))$       & Limite                 \\
 		\hline
-		$O(n!)$         & $10...11$                                                                                                           \\
-		$O(2^nn^2)$     & $15...18$                                                                                                           \\
-		$O(2^nn)$       & $18...21$                                                                                                           \\
-		$O(n^4)$        & \num{100}                                                                                                           \\
-		$O(n^3)$        & \num{500}\footnotemark\\
-		$O(n^2\log^2n)$ & \num{1000}                                                                                                              \\
-		$O(n^2\log n)$  & \num{2000}                                                                                                              \\
-		$O(n^2)$        & \num{1e4}\footnotemark                                                        \\
-		$O(n\log^2n)$   & \num{3e5}                                                                                                           \\
-		$O(n\log n)$    & \num{1e6}                                                                                                           \\
-		$O(n)$          & \num{1e8}\footnotemark                                                      \\
+		$O(n!)$         & $10...11$              \\
+		$O(2^nn^2)$     & $15...18$              \\
+		$O(2^nn)$       & $18...21$              \\
+		$O(n^4)$        & \num{100}              \\
+		$O(n^3)$        & \num{500}\footnotemark \\
+		$O(n^2\log^2n)$ & \num{1000}             \\
+		$O(n^2\log n)$  & \num{2000}             \\
+		$O(n^2)$        & \num{1e4}\footnotemark \\
+		$O(n\log^2n)$   & \num{3e5}              \\
+		$O(n\log n)$    & \num{1e6}              \\
+		$O(n)$          & \num{1e8}\footnotemark \\
 		\hline
 	\end{tabular}
 	\addtocounter{footnote}{-3}
- 	\stepcounter{footnote}\footnotetext{Este caso esta justo en el limite de tiempo, además en 256 MB cabe a los una matriz de $400^3$ ints}
+	\stepcounter{footnote}\footnotetext{Este caso esta justo en el limite de tiempo, además en 256 MB cabe a los una matriz de $400^3$ ints}
 	\stepcounter{footnote}\footnotetext{En general solo funciona hasta \num{6e3}}
 	\stepcounter{footnote}\footnotetext{En general solo funciona hasta \num{4e7}}
 	\vfill
@@ -88,6 +88,10 @@ texcl=false,
 		\hline
 	\end{tabular}
 \end{multicols}
+
+El mayor HCN\footnote{Highly Compositve Number, números que tienen más divisores que cualquier número más pequeño} menor a \num{1e9} tiene \num{1344} divisores.
+
+El ``prime gap'' hasta \num{1e9} es menor a \num{288}
 
 
 \newpage
