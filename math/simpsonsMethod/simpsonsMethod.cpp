@@ -8,6 +8,7 @@ double simpsons_rule(function<double(double)> f, double a, double b)
     return h3 * (f(a) + 4 * f(c) + f(b));
 }
 
+//Integrate f between a and b, using intervals of length (b-a)/n
 double simpsons_rule(function<double(double)> f, double a, double b, int n)
 {
     //n sets the precision for the result

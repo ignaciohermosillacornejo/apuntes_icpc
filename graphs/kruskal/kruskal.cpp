@@ -18,6 +18,7 @@ class Kruskal
     vi p, rank;
 
   public:
+  //Amount of Nodes n, and unordered vector of Edges E
     Kruskal(int n, vector<edge> E)
     {
         sum = 0;

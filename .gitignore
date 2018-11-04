@@ -295,3 +295,5 @@ TSWLatexianTemp*
 /.vscode
 .ds_store
 test
+in
+out.txt
