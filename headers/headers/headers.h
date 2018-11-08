@@ -15,7 +15,7 @@ typedef vector<vii> wgraph;
 #ifndef declaraciones_h
 #define declaraciones_h
 
-#define rep(i, n) for (size_t i = 0; i < (size_t)n; i++)
+#define rep(i, n) for (int i = 0; i < (int)n; i++)
 #define repx(i, a, b) for (int i = a; i < (int)b; i++)
 #define invrep(i, a, b) for (int i = b; i-- > (int)a;)
 
