@@ -1,11 +1,18 @@
 \documentclass[letterpaper]{article}
 \usepackage{pgffor}
+\usepackage{geometry}
 \usepackage{listings}
 \usepackage[section]{minted}
 \usepackage{python}
 \usepackage{hyperref}
 \usepackage{siunitx}
 \usepackage{multicol}
+
+\geometry{
+	letterpaper,
+	left=20mm,
+	right=20mm
+}
 
 \sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
 \sisetup{group-separator = {.}}
@@ -31,7 +38,13 @@ showtabs =false,
 texcl=false,
 }
 
+\title{Competitive Programming Notes}
+\author{Ignacio Hermosilla, Nicholas Mc-Donnell, Javier Reyes}
+\date{2018}
+
 \begin{document}
+
+\maketitle
 
 \begin{python}
 	import glob
