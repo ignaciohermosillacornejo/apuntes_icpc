@@ -13,6 +13,9 @@ int dijsktra(wgraph g, int start, int end)
         int u = q.top().second, w = q.top().first;
         q.pop();
 
+        // we skip all nodes in the q that we have discovered before at a lower cost
+        if (cost[u] < w) continue; 
+
         for (auto v : g[u])
         {
             if (cost[v.second] > v.first + w)

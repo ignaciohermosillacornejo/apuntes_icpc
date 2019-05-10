@@ -27,6 +27,8 @@ typedef vector<vii> wgraph;
 #define lgg(x) (63 - __buitlin_clzll(x))
 #define gcd __gcd
 
+#define INF INT_MAX
+
 #define umap unordered_map
 #define uset unordered_set
 
