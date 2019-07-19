@@ -56,7 +56,7 @@
 # *.ps
 # *.eps
 # *.pdf
-*.py
+# *.py
 *.py.err
 *.py.out
 dir.tex

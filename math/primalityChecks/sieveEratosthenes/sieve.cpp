@@ -1,5 +1,6 @@
 #include "../../../headers/headers/headers.h"
 
+// O(n log log n)
 vi sieve(int n)
 {
     vi primes;

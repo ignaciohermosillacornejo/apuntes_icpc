@@ -49,7 +49,7 @@ texcl=false,
 \begin{python}
 	import glob
 	raw_files = ["." + x.lstrip('.') for x in glob.glob("./*/*/*.h")]
-	raw_files += ["." + x.lstrip('.') for x in glob.glob("./*/*/*.cpp")].sorted()
+	raw_files += ["." + x.lstrip('.') for x in glob.glob("./*/*/*.cpp")]
 	files = [x + "," for x in raw_files[:-1]] + raw_files[-1:]
 	f = open("ListOfFiles.tex", "w")
 	f.write("\\def\ListOfFiles{")
@@ -104,7 +104,7 @@ texcl=false,
 
 El mayor HCN\footnote{Highly Compositve Number, números que tienen más divisores que cualquier número más pequeño} menor a \num{1e9} tiene \num{1344} divisores.
 
-El ``prime gap'' hasta \num{1e9} es menor a \num{288}
+El ``prime gap'' hasta \num{1e9} es a lo más \num{288}
 
 
 \newpage

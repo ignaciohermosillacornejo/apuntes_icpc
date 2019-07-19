@@ -1,6 +1,7 @@
-#include "../../headers.h"
-//Numerical Integration of f in interval [a,b]
+#include "../../headers/headers/headers.h"
 
+//O(Evaluate f)=g(f)
+//Numerical Integration of f in interval [a,b]
 double simpsons_rule(function<double(double)> f, double a, double b)
 {
     double c = (a + b) / 2;
@@ -8,6 +9,7 @@ double simpsons_rule(function<double(double)> f, double a, double b)
     return h3 * (f(a) + 4 * f(c) + f(b));
 }
 
+//O(n g(f))
 //Integrate f between a and b, using intervals of length (b-a)/n
 double simpsons_rule(function<double(double)> f, double a, double b, int n)
 {
