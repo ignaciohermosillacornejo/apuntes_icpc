@@ -6,7 +6,7 @@ This repository holds all the boilerplate code que that I and me team use during
 
 ## Printable version
 
-It is posible to auto generate a .pdf file for print based on all the content on the repository. In order to do this, you must compile the notes.tex file with the -shell-escape flag turned on
+It is posible to auto generate a .pdf file for print based on all the content on the repository. In order to do this, you must compile the main.tex file.
 
 ## Future updates
 
