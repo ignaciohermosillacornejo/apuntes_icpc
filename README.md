@@ -14,4 +14,29 @@ Pull requests are welcome, as well as any suggestions by opening an issue or wri
 
 ## Special Thanks
 
-To my teammate and the original creator of this repo, [Ignacio Hermosilla](https://github.com/ignaciohermosillacornejo). To [Pablo Messina](https://github.com/PabloMessina) who provided a template and some of the code from his notes. And to everyone who has contributed to finding bugs and expanding the repo.
+To my teammate and the original creator of this repo, [Ignacio Hermosilla](https://github.com/ignaciohermosillacornejo). To my coach [Pablo Messina](https://github.com/PabloMessina) who provided a template and some of the code from his notes. And to everyone who has contributed to finding bugs and expanding the repo.
+
+# TODO
+Add the following
+- [ ] Python Cheat Sheet
+- [ ] Prim
+- [ ] Green's Theorem
+- [ ] Convex Hull
+- [ ] Search
+  - [ ] Binary
+  - [ ] Ternary
+- [ ] Sparse Tables
+- [ ] Treap
+- [ ] Wavelet Tree
+- [ ] DP Examples
+  - [ ] Travelling Salesman
+  - [ ] Knapsack Problem
+- [ ] DP Optimizations
+  - [ ] Convex Hull Trick
+  - [ ] Divide & Conquer Optimization
+  - [ ] Knuth's Optimization
+- [ ] Toposort
+- [ ] Strongly Connected Components
+  - [ ] Tarjan
+  - [ ] Kosaraju
+- [ ] Heavy Light Decomposition
