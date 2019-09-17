@@ -1,18 +1,18 @@
 #include "../../headers/headers.h"
 
-// Se requiere un struct para el nodo (ej: prodsgn).
-// Un nodo debe tener tres constructores:
-//     Aridad 0: Construye el neutro de la operación
-//     Aridad 1: Construye un nodo hoja a partir del input
-//     Aridad 2: Construye un nodo según sus dos hijos
+// It requires a struct for a node (e.g. prodsgn)
+// A node must have three constructors
+//      Arity 0: Constructs the identity of the operation (e.g. 1 for prodsgn)
+//      Arity 1: Constructs a leaf node from the input
+//      Arity 2: Constructs a node from its children
 //
-// Construcción del segment tree:
-//     Hacer un arreglo de nodos (usar ctor de aridad 1).
-//     ST<miStructNodo> miSegmentTree(arregloDeNodos);
+// Building the Segment Tree:
+//      Create a vector of nodes (use constructor of arity 1).
+//      ST<miStructNode> mySegmentTree(vectorOfNodes);
 // Update:
-//     miSegmentTree.set_point(indice, miStructNodo(input));
+//      mySegmentTree.set_points(index, myStructNode(input));
 // Query:
-//     miSegmentTree.query(l, r) es inclusivo exclusivo y da un nodo. Usar la info del nodo para obtener la re
+//      mySegmentTree.query(l, r); (It searches on the range [l,r), and returns a node.)
 
 // Logic And Query
 struct ANDQ

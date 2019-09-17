@@ -294,6 +294,6 @@ TSWLatexianTemp*
 
 /.vscode
 .ds_store
-test
-in
-out.txt
+test*
+in*
+out*
