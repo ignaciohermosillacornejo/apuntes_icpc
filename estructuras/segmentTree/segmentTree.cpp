@@ -18,9 +18,9 @@
 // Logic And Query
 struct ANDQ
 {
-    intt value;
+    ll value;
     ANDQ() { value = -1ll; }
-    ANDQ(intt x) { value = x; }
+    ANDQ(ll x) { value = x; }
     ANDQ(const ANDQ &a,
          const ANDQ &b)
     {
