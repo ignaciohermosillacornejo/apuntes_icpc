@@ -1,5 +1,5 @@
 #include "../../headers/headers.h"
-class LcaTree
+class LcaForest
 {
     int n;
     vi parent;
@@ -8,7 +8,7 @@ class LcaTree
     graph P;
 
 public:
-    LcaTree(int n)
+    LcaForest(int n)
     {
         this->n = n;
         parent.assign(n, -1);
