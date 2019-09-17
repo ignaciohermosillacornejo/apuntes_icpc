@@ -1,3 +1,4 @@
+#pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -5,6 +6,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> ii;
+typedef tuple<int, int, int> iii;
 typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef vector<ii> vii;
@@ -31,9 +33,6 @@ typedef vector<vii> wgraph;
 
 #define umap unordered_map
 #define uset unordered_set
-
-//ios::sync_with_stdio(0); cin.tie(0);
-//cout.setf(ios::fixed); cout.precision(4);
 
 #define debugx(x) cerr << #x << ": " << x << endl
 #define debugv(v)         \
@@ -62,7 +61,7 @@ typedef vector<vii> wgraph;
         }                                                                  \
         cerr << endl;                                                      \
     }
-#define print(x) copy(x.begin(), x.end(), ostream_iterator<int>(cout, “”)), cout << endl
+#define print(x) copy(x.begin(), x.end(), ostream_iterator<int>(cout, "")), cout << endl
 
 template <typename T1, typename T2>
 ostream &operator<<(ostream &os, const pair<T1, T2> &p)

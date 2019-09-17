@@ -1,0 +1,120 @@
+\documentclass[10pt,landscape,twocolumn,notitlepage]{article}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\usepackage{subfiles}
+\usepackage{pgffor}
+\usepackage{geometry}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{currfile}
+\usepackage{xstring}
+
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}} % siunitx setup
+\sisetup{group-separator = {.}}
+
+%%% Margenes
+\setlength{\columnsep}{6mm}    % default=10pt
+\setlength{\columnseprule}{0.5pt}    % default=0pt (no line)
+ 
+\addtolength{\textheight}{6cm}
+\addtolength{\topmargin}{-5mm}     % ~ -0.5 del incremento anterior
+\geometry{bottom=4mm}
+ 
+\addtolength{\textwidth}{2.8cm}
+\addtolength{\oddsidemargin}{-1.4cm} % -0.5 del incremento anterior
+ 
+\setlength{\headsep}{2mm}
+\setlength{\parskip}{0mm}
+\setlength{\headheight}{15pt}
+\setlength{\parindent}{0mm}
+ 
+%%% Encabezado y pie de pagina
+\pagestyle{fancy}
+\fancyhead[LO]{\textbf{\title}}
+\fancyhead[C]{\leftmark\ -\ \rightmark}
+\fancyhead[RO]{P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot{}
+\definecolor{darkblue}{rgb}{0,0,0.4}
+
+\lstloadlanguages{C++}
+\lstnewenvironment{code}
+  {%\lstset{  numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
+   \csname lst@SetFirstLabel\endcsname}
+  {\csname lst@SaveFirstLabel\endcsname}
+\lstset{% general command to set parameter(s)
+  language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+  emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
+  morekeywords={tint,forn,forsn},
+  basewidth={0.47em,0.40em},
+  columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+  flexiblecolumns=false, tabsize=2, breaklines, breakatwhitespace=false, extendedchars=true, showstringspaces=false,
+  numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+  frame=l, framesep=3pt,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\color{darkblue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#}
+}
+
+% Fix for relative path file insertion (graphics and listings)
+\makeatletter
+\let\org@subfile\subfile%
+\renewcommand*{\subfile}[1]{%
+  \filename@parse{#1}% LaTeX's file name parser
+  \expandafter
+  \graphicspath\expandafter{\expandafter{\filename@area}}%
+  \expandafter
+  \lstset\expandafter{inputpath={\expandafter\filename@area}}
+  \org@subfile{#1}%
+  \lstset{inputpath=\currfiledir}
+}
+\makeatother
+
+\begin{document}
+\def\title{Nicholas Mc-Donnell's ICPC Notes}
+\tableofcontents\newpage
+
+\section{Info About Memory and Time Limits}
+\subfile{info}
+
+\section{C++ Cheat Sheet}
+\subsection{Headers}
+\lstinputlisting{../headers/headers.h}
+\subsection{Cheat Sheet}
+\lstinputlisting{../cheatSheet/cheatSheet.cpp}
+
+\section{General Algorithms}
+\subsection{Search}
+\subsection{Brute Force}
+
+%Data Structures
+\subfile{../dataStructures/dataStructures.tex}
+
+%Dynamic Programming
+\subfile{../dp/dp.tex}
+
+%Graphs
+\subfile{../graphs/graphs.tex}
+
+%Mathematics
+\subfile{../math/math.tex}
+
+%Geometry
+\subfile{../geometry/geometry.tex}
+
+%Strings
+\subfile{../strings/strings.tex}
+
+\end{document}

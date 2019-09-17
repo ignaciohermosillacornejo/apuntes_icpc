@@ -1,13 +1,13 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 template <class T>
 class Pol
 {
-  private:
+private:
     vector<T> cofs;
     int n;
 
-  public:
+public:
     Pol(vector<T> cofs) : cofs(cofs)
     {
         this->n = cofs.size() - 1;

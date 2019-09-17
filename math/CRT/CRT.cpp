@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 ll inline mod(ll x, ll m) { return ((x %= m) < 0) ? x + m : x; }
 ll inline mul(ll x, ll y, ll m) { return (x * y) % m; }

@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 //Numeración en [0,n-1] y [0,m-1]
 template <class T>
 class FenwickTree2D

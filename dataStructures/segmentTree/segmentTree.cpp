@@ -1,11 +1,11 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 // Se requiere un struct para el nodo (ej: prodsgn).
 // Un nodo debe tener tres constructores:
 //     Aridad 0: Construye el neutro de la operación
 //     Aridad 1: Construye un nodo hoja a partir del input
 //     Aridad 2: Construye un nodo según sus dos hijos
-// 
+//
 // Construcción del segment tree:
 //     Hacer un arreglo de nodos (usar ctor de aridad 1).
 //     ST<miStructNodo> miSegmentTree(arregloDeNodos);
@@ -13,7 +13,6 @@
 //     miSegmentTree.set_point(indice, miStructNodo(input));
 // Query:
 //     miSegmentTree.query(l, r) es inclusivo exclusivo y da un nodo. Usar la info del nodo para obtener la re
-
 
 // Logic And Query
 struct ANDQ
@@ -29,49 +28,62 @@ struct ANDQ
 };
 
 // Interval Product (LiveArchive)
-struct prodsgn {
+struct prodsgn
+{
     int sgn;
-    prodsgn() {sgn = 1;}
-    prodsgn(int x) {
+    prodsgn() { sgn = 1; }
+    prodsgn(int x)
+    {
         sgn = (x > 0) - (x < 0);
     }
     prodsgn(const prodsgn &a,
-            const prodsgn &b) {
-        sgn = a.sgn*b.sgn;
+            const prodsgn &b)
+    {
+        sgn = a.sgn * b.sgn;
     }
 };
 
 // Maximum Sum (SPOJ)
-struct maxsum {
+struct maxsum
+{
     int first, second;
-    maxsum() {first = second = -1;}
-    maxsum(int x) {
-        first = x; second = -1;
+    maxsum() { first = second = -1; }
+    maxsum(int x)
+    {
+        first = x;
+        second = -1;
     }
     maxsum(const maxsum &a,
-           const maxsum &b) {
-        if (a.first > b.first) {
+           const maxsum &b)
+    {
+        if (a.first > b.first)
+        {
             first = a.first;
             second = max(a.second,
                          b.first);
-        } else {
+        }
+        else
+        {
             first = b.first;
             second = max(a.first,
                          b.second);
         }
     }
-    int answer() {
+    int answer()
+    {
         return first + second;
     }
 };
 
 // Range Minimum Query
-struct rminq {
+struct rminq
+{
     int value;
-    rminq() {value = INT_MAX;}
-    rminq(int x) {value = x;}
+    rminq() { value = INT_MAX; }
+    rminq(int x) { value = x; }
     rminq(const rminq &a,
-          const rminq &b) {
+          const rminq &b)
+    {
         value = min(a.value,
                     b.value);
     }
@@ -83,7 +95,7 @@ class ST
     vector<node> t;
     int n;
 
-  public:
+public:
     ST(vector<node> &arr)
     {
         n = arr.size();

@@ -1,4 +1,4 @@
-#include "../../../headers/headers/headers.h"
+#include "../../../headers/headers.h"
 
 // O(sqrt(n)/log(sqrt(n))+log(n))
 vi trialDivision(int n, vi &primes)

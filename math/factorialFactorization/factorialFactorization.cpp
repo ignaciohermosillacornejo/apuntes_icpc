@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 // O(n)
 umap<int, int> factorialFactorization(int n, vi &primes)

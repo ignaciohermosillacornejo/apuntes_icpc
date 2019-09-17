@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 //O(Evaluate f)=g(f)
 //Numerical Integration of f in interval [a,b]

@@ -1,4 +1,4 @@
-#include "../../../headers/headers/headers.h"
+#include "../../../headers/headers.h"
 
 // O(n log log n)
 vi sieve(int n)
