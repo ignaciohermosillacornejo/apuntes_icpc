@@ -46,6 +46,6 @@ class FenwickTree2D
 
     void set(int r, int c, T value)
     {
-        add(r, c, -get(t, r, c) + value);
+        add(r, c, -get(r, c) + value);
     }
 };
