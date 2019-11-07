@@ -47,7 +47,7 @@
 \fancyfoot{}
 \definecolor{darkblue}{rgb}{0,0,0.4}
 
-\lstloadlanguages{C++}
+\lstloadlanguages{C++, Python}
 \lstnewenvironment{code}
   {%\lstset{  numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
    \csname lst@SetFirstLabel\endcsname}
@@ -92,13 +92,20 @@
 \section{C++ Cheat Sheet}
 \subsection{Headers}
 \lstinputlisting{../headers/headers.h}
+
 \subsection{Cheat Sheet}
-\lstinputlisting{../cheatSheet/cheatSheet.cpp}
+\lstinputlisting[firstline=3]{../cheatSheet/cheatSheet.cpp}
 
 %\section{Python Cheat Sheet}
 
 \section{General Algorithms}
 \subsection{Search}
+\subsubsection{Binary Search}
+\lstinputlisting[firstline=2]{../search/binsearch.cpp}
+
+\subsubsection{Ternary Search}
+\lstinputlisting[firstline=2]{../search/tersearch.cpp}
+
 \subsection{Brute Force}
 
 %Data Structures

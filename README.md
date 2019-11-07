@@ -22,6 +22,7 @@ Add the following
 - [ ] Prim
 - [ ] Green's Theorem
 - [ ] Convex Hull
+- [ ] Rolling Hashing
 - [ ] Search
   - [ ] Binary
   - [ ] Ternary

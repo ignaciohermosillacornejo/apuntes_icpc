@@ -8,19 +8,18 @@ void dfs_i(graph &g, int start)
 
     s.emplace(start);
     visited[start] = 0;
-
     while (not s.empty())
     {
         int u = s.top();
         s.pop();
 
-        cout << u << '\n';
-
         for (int v : g[u])
+        {
             if (visited[v])
             {
                 s.emplace(v);
                 visited[v] = 0;
             }
+        }
     }
 }

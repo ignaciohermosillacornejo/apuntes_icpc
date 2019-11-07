@@ -41,3 +41,29 @@ ll modularInverse(ll n, ll mod)
     return x;
 }
 
+ll mulmod(ull a, ull b, ull c)
+{
+    ull x = 0, y = a % c;
+    while (b)
+    {
+        if (b & 1)
+            x = (x + y) % c;
+        y = (y << 1) % c;
+        b >>= 1;
+    }
+    return x % c;
+}
+
+ll fastPow(ll x, ll n, ll MOD)
+{
+    ll ret = 1;
+    while (n)
+    {
+        if (n & 1)
+            ret = mulmod(ret, x, MOD);
+        x = mulmod(x, x, MOD);
+        n >>= 1;
+    }
+    return ret;
+}
+
