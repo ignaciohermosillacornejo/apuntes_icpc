@@ -11,7 +11,7 @@ _job:
               key: v1-{{ checksum "packages.txt" }}
         - run:
               name: Install minimal TeXLive
-              command: sudo apt update && sudo apt install texlive-base
+              command:  apt update &&  apt install texlive-base
         - run:
               name: Install package dependencies
               command: ./bin/install-packages packages.txt
@@ -48,7 +48,7 @@ jobs:
                   key: v1-{{ checksum "packages.txt" }}
             - run:
                   name: Install minimal TeXLive
-                  command: sudo apt update && sudo apt install texlive-base
+                  command:  apt update &&  apt install texlive-base
             - run:
                   name: Install package dependencies
                   command: ./bin/install-packages packages.txt
@@ -77,7 +77,7 @@ jobs:
                   key: v1-{{ checksum "packages.txt" }}
             - run:
                   name: Install minimal TeXLive
-                  command: sudo apt update && sudo apt install texlive-base
+                  command:  apt update &&  apt install texlive-base
             - run:
                   name: Install package dependencies
                   command: ./bin/install-packages packages.txt
@@ -106,7 +106,7 @@ jobs:
                   key: v1-{{ checksum "packages.txt" }}
             - run:
                   name: Install minimal TeXLive
-                  command: sudo apt update && sudo apt install texlive-base
+                  command:  apt update &&  apt install texlive-base
             - run:
                   name: Install package dependencies
                   command: ./bin/install-packages packages.txt
