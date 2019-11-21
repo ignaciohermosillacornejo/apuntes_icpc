@@ -1,6 +1,6 @@
 .PHONY: all clean lint
 
-LATEX ?= pdflatex
+LATEX ?= xelatex
 VPATH = Notes
 BUILDDIR = Notes
 

@@ -296,6 +296,7 @@ TSWLatexianTemp*
 .ds_store
 test*
 in*
+*.out.ps
 out*
 *.dep
 
