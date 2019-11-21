@@ -12,23 +12,14 @@ int lis(int n)
     L[0] = vals[0];
     repx(i, 1, n)
     {
-        int left = 0, right = maxl - 1, mid;
-        while (left < right)
-        {
-            mid = (left + right) / 2;
-            if (vals[i] > L[mid])
-                left = mid;
-            else
-                right = mid;
-        }
-        mid = (left + right) / 2;
-        if (mid == maxl - 1)
+        auto it = lower_bound(L.begin(), L.begin() + maxl, vals[i]);
+        if (it == L.begin() + maxl)
         {
             L[maxl] = vals[i];
             maxl++;
         }
         else
-            L[mid] = vals[i];
+            *it = vals[i];
     }
     return maxl;
 }
