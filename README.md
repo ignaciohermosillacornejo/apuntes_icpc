@@ -1,5 +1,5 @@
 # Competitive programing notes
-
+[![CircleCI](https://circleci.com/gh/N9199/apuntes_icpc.svg?style=svg)](https://circleci.com/gh/N9199/apuntes_icpc)
 ## Introduction
 
 This repository holds all the boilerplate code que that I and me team use during training and actual competitions. Almost all .cpp files are ready to be copied and pasted, including relevant comments. However, for anyone using this repository, we must caution that a good understanding of the code and the theory behind it is needed in order to be effective using it, as it will most likely need some form of modifications for your particular problem.
