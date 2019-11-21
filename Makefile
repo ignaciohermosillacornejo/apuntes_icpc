@@ -11,6 +11,5 @@ clean:
 
 lint:
 	npx eclint check *.cls *.sty *.tex 
-
 %.pdf: %.tex
-	cd $(BUILDDIR) && pwd && latexmk -synctex=1 --interaction=nonstopmode -pdf- -shell-escape --pdflatex=$(LATEX) ../$<; latexmk -synctex=1 --interaction=nonstopmode -pdf -shell-escape --pdflatex=$(LATEX) ../$<
+	cd $(BUILDDIR) && pwd && latexmk -synctex=1 --interaction=nonstopmode -pdf- -shell-escape --pdflatex=$(LATEX) ../$<; latexmk -synctex=1 --interaction=nonstopmode -pdf- -shell-escape --pdflatex=$(LATEX) ../$<; latexmk -synctex=1 --interaction=nonstopmode -pdf- -shell-escape --pdflatex=$(LATEX) ../$<
