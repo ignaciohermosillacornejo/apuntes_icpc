@@ -1,22 +1,22 @@
 \documentclass[10pt,landscape,twocolumn,notitlepage]{article}
-\usepackage{hyperref}
-\usepackage[utf8]{inputenc}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-\usepackage{geometry}
-\usepackage{listings}
-\usepackage{amssymb}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{graphicx}
-\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage{makeidx}
-\usepackage{subfiles}
-\usepackage{pgffor}
-\usepackage{geometry}
-\usepackage{siunitx}
-\usepackage{multicol}
+\usepackage{amssymb}
 \usepackage{currfile}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{pgffor}
+\usepackage{siunitx}
+\usepackage{subfiles}
+\usepackage{url}
+\usepackage{wrapfig}
 \usepackage{xstring}
 
 \sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}} % siunitx setup
@@ -49,18 +49,18 @@
 
 \lstloadlanguages{C++, Python}
 \lstnewenvironment{code}
-  {%\lstset{  numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
-   \csname lst@SetFirstLabel\endcsname}
-  {\csname lst@SaveFirstLabel\endcsname}
+    {%\lstset{  numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
+    \csname lst@SetFirstLabel\endcsname}
+    {\csname lst@SaveFirstLabel\endcsname}
 \lstset{% general command to set parameter(s)
-  language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
-  emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
-  morekeywords={tint,forn,forsn},
-  basewidth={0.47em,0.40em},
-  columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
-  flexiblecolumns=false, tabsize=2, breaklines, breakatwhitespace=false, extendedchars=true, showstringspaces=false,
-  numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
-  frame=l, framesep=3pt,
+    language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+    emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
+    morekeywords={tint,forn,forsn},
+    basewidth={0.47em,0.40em},
+    columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+    flexiblecolumns=false, tabsize=2, breaklines, breakatwhitespace=false, extendedchars=true, showstringspaces=false,
+    numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+    frame=l, framesep=3pt,
     basicstyle=\footnotesize\ttfamily,
     keywordstyle=\color{darkblue}\ttfamily,
     stringstyle=\color{magenta}\ttfamily,
@@ -72,13 +72,13 @@
 \makeatletter
 \let\org@subfile\subfile%
 \renewcommand*{\subfile}[1]{%
-  \filename@parse{#1}% LaTeX's file name parser
-  \expandafter
-  \graphicspath\expandafter{\expandafter{\filename@area}}%
-  \expandafter
-  \lstset\expandafter{inputpath={\expandafter\filename@area}}
-  \org@subfile{#1}%
-  \lstset{inputpath=\currfiledir}
+    \filename@parse{#1}% LaTeX's file name parser
+    \expandafter
+    \graphicspath\expandafter{\expandafter{\filename@area}}%
+    \expandafter
+    \lstset\expandafter{inputpath={\expandafter\filename@area}}
+    \org@subfile{#1}%
+    \lstset{inputpath=\currfiledir}
 }
 \makeatother
 
