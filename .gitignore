@@ -297,6 +297,7 @@ TSWLatexianTemp*
 test*
 in*
 out*
+*.deb
 
 #Node
 node_modules
