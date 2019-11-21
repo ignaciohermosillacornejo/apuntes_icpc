@@ -1,0 +1,21 @@
+# Packages dependencies
+#
+# 
+
+hyperref
+inputenc
+fancyhdr
+lastpage
+geometry
+listings
+amssymb
+color
+graphicx
+wrapfig
+makeidx
+subfiles
+pgffor
+siunitx
+multicol
+currfile
+xstring
