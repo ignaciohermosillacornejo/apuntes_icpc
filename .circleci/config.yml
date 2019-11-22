@@ -25,7 +25,7 @@ _job:
               command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
         - run:
               name: Clean Repo
-              command: rm -rf *.pdf
+              command: make clean
         - run:
               name: Compile document
               command: make
@@ -65,7 +65,7 @@ jobs:
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
             - run:
                   name: Clean Repo
-                  command: rm -rf *.pdf
+                  command: make clean
             - run:
                   name: Compile document
                   command: make
@@ -97,7 +97,7 @@ jobs:
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
             - run:
                   name: Clean Repo
-                  command: rm -rf *.pdf
+                  command: make clean
             - run:
                   name: Compile document
                   command: make
@@ -129,7 +129,7 @@ jobs:
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
             - run:
                   name: Clean Repo
-                  command: rm -rf *.pdf
+                  command: make clean
             - run:
                   name: Compile document
                   command: make
