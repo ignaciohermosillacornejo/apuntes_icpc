@@ -64,6 +64,9 @@ jobs:
                   name: Add TeXLive to PATH
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
             - run:
+                  name: Clean Repo
+                  commmand: rm -rf *.pdf
+            - run:
                   name: Compile document
                   command: make
         environment:
@@ -93,6 +96,9 @@ jobs:
                   name: Add TeXLive to PATH
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
             - run:
+                  name: Clean Repo
+                  commmand: rm -rf *.pdf
+            - run:
                   name: Compile document
                   command: make
         environment:
@@ -121,6 +127,9 @@ jobs:
             - run:
                   name: Add TeXLive to PATH
                   command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
+            - run:
+                  name: Clean Repo
+                  commmand: rm -rf *.pdf
             - run:
                   name: Compile document
                   command: make
