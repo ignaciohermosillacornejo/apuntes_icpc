@@ -59,7 +59,7 @@ Add the following
   - Primality Checks:
     - Sieve of Eratosthenes: Nicholas Mc-Donnell
     - Trial Division: Nicholas Mc-Donnell
-    - Miller Rabin: Taken from the notes a team of Universidad de Chile, with modifications by Nicholas Mc-Donnell
+    - Miller Rabin: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit), with modifications by Nicholas Mc-Donnell
   - Graphs:
     - BFS: Nicholas Mc-Donnell
     - DFS: Nicholas Mc-Donnell
@@ -68,7 +68,7 @@ Add the following
     - Floyd Warshall: Nicholas Mc-Donnell
     - Kruskal: Nicholas Mc-Donnell
     - Union Find/DSU: Nicholas Mc-Donnell
-    - Dinic: Taken from the notes a team of Universidad de Chile
+    - Dinic: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit)
     - LCA: Javier Reyes
   - Geometry:
     - Green's theorem: Pablo Messina
@@ -81,8 +81,8 @@ Add the following
   - Data Structures:
     - Fenwick Tree: Ignacio Hermosilla
     - Fenwick Tree 2D: Ignacio Hermosilla
-    - Segment Tree: Ignacio Hermosilla
-    - Lazy Segment Tree: Taken from the notes a team of Universidad de Chile
-    - Wavelet Tre: Taken from the notes a team of Universidad de Chile
-  - Headers: Taken from the notes a team of Universidad de Chile, with additions and modifications by Nicholas Mc-Donnell
+    - Segment Tree: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit)
+    - Lazy Segment Tree: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit)
+    - Wavelet Tre: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit)
+  - Headers: Taken from these [notes](https://docs.google.com/document/d/1rcex_saP4tExbbU62qGUjR3eenxOh-50i9Y45WtHkc4/edit), with additions and modifications by Nicholas Mc-Donnell
   - C++ Cheat Sheet: Pablo Messina
