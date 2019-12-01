@@ -43,3 +43,46 @@ Add the following
   - [ ] Tarjan
   - [ ] Kosaraju
 - [ ] Heavy Light Decomposition
+
+# Credit
+- Strings
+  - KMP:
+  - Rolling Hashing:
+  - Suffix Tree: Javier Reyes
+  - Trie: Found by Ignacio Hermosilla
+- Math
+  - CRT: Pablo Messina
+  - Factorial Factorization:
+  - Modular Arithmetic:
+  - nCr: Nicholas Mc-Donnell
+  - Polynomials: Nicholas Mc-Donnell
+  - Primality Checks:
+    - Sieve of Eratosthenes: Nicholas Mc-Donnell
+    - Trial Division: Nicholas Mc-Donnell
+    - Miller Rabin: Taken from the notes a team of Universidad de Chile, with modifications by Nicholas Mc-Donnell
+  - Graphs:
+    - BFS: Nicholas Mc-Donnell
+    - DFS: Nicholas Mc-Donnell
+    - Dijsktra: Nicholas Mc-Donnell
+    - Bellman Ford: Nicholas Mc-Donnell
+    - Floyd Warshall: Nicholas Mc-Donnell
+    - Kruskal: Nicholas Mc-Donnell
+    - Union Find/DSU: Nicholas Mc-Donnell
+    - Dinic: Taken from the notes a team of Universidad de Chile
+    - LCA: Javier Reyes
+  - Geometry:
+    - Green's theorem: Pablo Messina
+    - Simpson's Method: Nicholas Mc-Donnell
+    - Vectors 2D: Nicholas Mc-Donnell & Pablo Messina
+  - DP:
+    - Knapsack: Nicholas Mc-Donnell
+    - LIS: Nicholas Mc-Donnell
+    - MCM: Nicholas Mc-Donnell
+  - Data Structures:
+    - Fenwick Tree: Ignacio Hermosilla
+    - Fenwick Tree 2D: Ignacio Hermosilla
+    - Segment Tree: Ignacio Hermosilla
+    - Lazy Segment Tree: Taken from the notes a team of Universidad de Chile
+    - Wavelet Tre: Taken from the notes a team of Universidad de Chile
+  - Headers: Taken from the notes a team of Universidad de Chile, with additions and modifications by Nicholas Mc-Donnell
+  - C++ Cheat Sheet: Pablo Messina
