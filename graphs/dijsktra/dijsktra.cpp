@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 //g has vectors of pairs of the form (w, index)
 int dijsktra(wgraph g, int start, int end)
 {

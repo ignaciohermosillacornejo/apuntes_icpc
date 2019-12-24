@@ -1,0 +1,63 @@
+\documentclass[../Notes/main.tex]{subfiles}
+
+\begin{document}
+\section{Graphs}
+
+\subsection{Graph Traversal}
+
+\subsubsection{Breadth First Search}
+\lstinputlisting[firstline=2]{bfs/bfs.cpp}
+
+\subsubsection{Recursive Depth First Search}
+\lstinputlisting[firstline=2]{dfs/dfsRecursive.cpp}
+
+\subsubsection{Iterative Depth First Search}
+\lstinputlisting[firstline=2]{dfs/dfsIterative.cpp}
+
+%\subsection{Topological Sort}
+%\lstinputlisting[firstline=2]{topoSort/topoSort.cpp}
+
+\subsection{Shortest Path Algorithms}
+
+\subsubsection{Dijsktra}
+All edges have non-negative values
+\lstinputlisting[firstline=2]{dijsktra/dijsktra.cpp}
+
+\subsubsection{Bellman Ford}
+Edges can be negative, and it detects negative cycles
+\lstinputlisting[firstline=2]{bellmanFord/bellmanFord.cpp}
+
+\subsubsection{Floyd Warshall}
+Shortest path from every node to every other node
+\lstinputlisting[firstline=2]{floydWarshall/floydWarshall.cpp}
+
+\subsection{Minimum Spanning Tree (MST)}
+
+\subsubsection{Kruskal}
+\lstinputlisting[firstline=2]{kruskal/kruskal.cpp}
+
+% \subsubsection{Prim}
+% \lstinputlisting[firstline=2]{prim/prim.cpp}
+
+\subsection{Lowest Common Ancestor (LCA)}
+Supports multiple trees
+\lstinputlisting[firstline=2]{lca/lca.cpp}
+
+% \subsection{Strongly Connected Components}
+
+% \subsubsection{Tarjan}
+% \lstinpuntlisting[firstline=2]{tarjan/tarjan.cpp}
+
+% \subsubsection{Korasaju}
+% \lstinpuntlisting[firstline=2]{korasaju/korasaju.cpp
+
+\subsection{Max Flow}
+\lstinputlisting[firstline=2]{dinic/dinic.cpp}
+
+% \subsection{Heavy Light Decomposition}
+% \lstinputlisting[firstline=2]{heavyLight/heavyLight.cpp}
+
+\subsection{Others}
+\subsubsection{Diameter of a tree}
+\lstinputlisting[firstline=2]{treeDiameter/treeDiameter.cpp}
+\end{document}

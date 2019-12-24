@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 //Recursive (create visited filled with 1s)
 void dfs_r(graph &g, vi &visited, int u)
 {

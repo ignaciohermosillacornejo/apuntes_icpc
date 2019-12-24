@@ -294,6 +294,11 @@ TSWLatexianTemp*
 
 /.vscode
 .ds_store
-test
-in
-out.txt
+test*
+in*
+*.out.ps
+out*
+*.dep
+
+#Node
+node_modules

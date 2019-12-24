@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 struct edge
 {
     int u, v;

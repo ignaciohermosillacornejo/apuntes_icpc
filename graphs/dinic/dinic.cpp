@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 class Dinic
 {
     struct edge
@@ -85,3 +85,4 @@ class Dinic
         return ans;
     }
 };
+

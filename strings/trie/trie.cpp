@@ -1,4 +1,4 @@
-#include "../../headers/headers/headers.h"
+#include "../../headers/headers.h"
 
 /* Implementation from: https://pastebin.com/fyqsH65k */
 struct TrieNode
