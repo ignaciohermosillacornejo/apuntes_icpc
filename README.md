@@ -11,7 +11,6 @@ It is posible to auto generate a .pdf file for print based on all the content on
 ## Future updates
 
 Pull requests are welcome, as well as any suggestions by opening an issue or writing to my [mail](namcdonnell@uc.cl).
-
 ## Special Thanks
 
 To my teammate and the original creator of this repo, [Ignacio Hermosilla](https://github.com/ignaciohermosillacornejo). To my coach [Pablo Messina](https://github.com/PabloMessina) who provided a template and some of the code from his notes. And to everyone who has contributed to finding bugs and expanding the repo.
