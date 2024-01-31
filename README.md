@@ -10,7 +10,7 @@ It is posible to auto generate a .pdf file for print based on all the content on
 
 ## Future updates
 
-Pull requests are welcome, as well as any suggestions by opening an issue or writing to my [mail](namcdonnell@uc.cl).
+Pull requests are welcome, as well as any suggestions by opening an issue or writing to my [mail](namcdonnell@uc.cl)
 
 ## Special Thanks
 
